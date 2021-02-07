@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>App</h1>    
+    </header>
+    <main>
+        <div class='container'>
+            <form id='urlForm' action='localhost:3001/' method='POST'>
+                <label for='url'>URL: </label>
+                <input id='urlInput' name='url' type='text'/>
+                <label for='rate'>Rate</label>
+                <div>
+                    <input id='rate' type='range' class='custom-range' min='0.5' max='2' value='1' step='0.1'/>
+                    <label for='pitch'>Pitch</label>
+                </div>
+                <div>
+                    <input id='pitch' type='range' class='custom-range' min='0' max='2' value='1' step='0.1'/>
+                    <input type='submit' value='Speak'/>
+                </div>
+            </form>
+            <select id='voice-select' class='form-control form-control-lg'></select>
+            <br></br>
+            <button id='btnSpeak'>Speak</button>
+            <button id='btnStop'>Stop</button>
+        </div>
+    </main>
+<script src='../src/app.js'></script>
+</body>
+</html>
+
+
+

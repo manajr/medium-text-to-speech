@@ -1,0 +1,10 @@
+<button>speak</button>
+
+<script src="f597fd4d651fc196c7a7b668b4b0e6a3"></script>
+
+<script data-parcel-key="d43a142c1930a8557b95ad22d9602a6e">
+    const speak = (orderedText, tag) => {
+        const utterance = new SpeechSynthesisUtterance(text);
+        speechSynthesis.speak(utterance);
+    }
+</script>

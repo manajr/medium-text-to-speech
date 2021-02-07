@@ -1,0 +1,4 @@
+const speak = (orderedText, tag) => {
+        const utterance = new SpeechSynthesisUtterance(text);
+        speechSynthesis.speak(utterance);
+    }
